@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kxmlgui\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-10 00:41+0000\n"
-"PO-Revision-Date: 2026-07-16 14:33+0900\n"
+"PO-Revision-Date: 2026-07-18 01:41+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Min Nan Chinese Latin <zh-l10n@lists.slat.org>\n"
 "Language: nan_TW@latin\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 26.11.70\n"
+"X-Generator: Lokalize 26.07.70\n"
 
 #: kaboutapplicationdialog.cpp:60 kaboutplugindialog.cpp:65
 #, kde-format
@@ -358,7 +358,7 @@ msgid ""
 "The application for which you wish to submit a bug report - if incorrect, "
 "please use the Report Bug menu item of the correct application"
 msgstr ""
-"Lí ài the̍h-tshut tshò-gōo huê-pò ê îng-ióng tîng-sik - tse nā-sī m̄-tio̍h, "
+"Lí ài the̍h-tshut tshò-gōo huê-pò ê ìng-iōng-tîng-sik - tse nā-sī m̄-tio̍h, "
 "tshiánn uì tio̍h--ê tîng-sik ê suán-tuann khì iōng i ê Huê-pò Tshò-gōo ê suán-"
 "hāng"
 
@@ -508,7 +508,7 @@ msgstr "Tôo-sī bûn-jī(&X):"
 msgctxt "@option:check"
 msgid "&Hide text when toolbar shows text alongside icons"
 msgstr ""
-"Kang-kū-lia̍t tī tôo-sī pinn-á &hiān-sî bûn-jī ê sî-tsūn bái hiān-sî bûn-jī"
+"Kang-kū-lia̍t tī tôo-sī pinn-á &hiān-sî bûn-jī ê sî-tsūn mài hiān-sî bûn-jī"
 
 #: kedittoolbar.cpp:596
 #, kde-format
@@ -647,7 +647,7 @@ msgid ""
 msgstr ""
 "Tshi̍h tsit-ê liú, jiân-āu tshin-tshiūnn tī he tîng-sik lāi-té kāng-khuán su-"
 "ji̍p khuài-sok-khí.\n"
-"Lē: uì Ctrl+A, tshi̍h-leh Ctrl khì, jiân-āu tshi̍h A."
+"Lē: uī Ctrl+A, tshi̍h-leh Ctrl khì, jiân-āu tshi̍h A."
 
 #: kkeysequencewidget.cpp:150
 #, kde-format
@@ -756,7 +756,7 @@ msgid ""
 "some applications use.\n"
 "Do you really want to use it as a global shortcut as well?"
 msgstr ""
-"'%1' khí tsoo-ha̍p mā uì tsi̍t-kuá îng-ióng-tîng-sik iōng ê piau-tsún tōng-"
+"'%1' khí tsoo-ha̍p mā uī tsi̍t-kuá îng-ióng-tîng-sik iōng ê piau-tsún tōng-"
 "tsok \"%2\" sú-iōng.\n"
 "Lí kám tsin-tsiànn ài kā i tòng-tsò tsuân-i̍k khuài-sok-khí lâi iōng?"
 
