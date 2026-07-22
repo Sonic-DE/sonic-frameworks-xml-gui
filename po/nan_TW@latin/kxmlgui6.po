@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: kxmlgui\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-06-10 00:41+0000\n"
-"PO-Revision-Date: 2026-07-18 01:41+0900\n"
+"PO-Revision-Date: 2026-07-22 00:05+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Min Nan Chinese Latin <zh-l10n@lists.slat.org>\n"
 "Language: nan_TW@latin\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 26.07.70\n"
+"X-Generator: Lokalize 26.11.70\n"
 
 #: kaboutapplicationdialog.cpp:60 kaboutplugindialog.cpp:65
 #, kde-format
@@ -688,7 +688,7 @@ msgstr[0] ""
 #, kde-format
 msgctxt "@action:button"
 msgid "Reassign"
-msgstr "Tîng tsí-phài"
+msgstr "Tîng-tsí-phài"
 
 #: kkeysequencewidget.cpp:193
 #, kde-format
