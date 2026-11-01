@@ -28,10 +28,10 @@ KAboutKdeDialog::KAboutKdeDialog(QWidget *parent)
     : QDialog(parent)
     , d(nullptr)
 {
-    setWindowTitle(i18nc("@title:window", "About KDE"));
+    setWindowTitle(i18nc("@title:window", "About SonicDE"));
 
     KTitleWidget *titleWidget = new KTitleWidget(this);
-    titleWidget->setText(i18n("<html><font size=\"5\">KDE</font><br />Be Free!</html>"));
+    titleWidget->setText(i18n("<html><font size=\"5\">SonicDE</font><br />Be Free!</html>"));
     titleWidget->setIconSize(QSize(48, 48));
     titleWidget->setIcon(QIcon::fromTheme(QStringLiteral("kde")), KTitleWidget::ImageLeft);
 
@@ -43,18 +43,18 @@ KAboutKdeDialog::KAboutKdeDialog(QWidget *parent)
     about->setTextInteractionFlags(Qt::TextBrowserInteraction);
     about->setText(
         i18n("<html>"
-             "<b>KDE</b> is a world-wide community of software engineers, artists, writers, "
+             "<b>SonicDE</b> is a world-wide community of software engineers, artists, writers, "
              "translators and creators who are committed to <a href=\"%1\">Free Software</a> "
-             "development. KDE produces the Plasma desktop environment, hundreds of applications, "
+             "development. SonicDE produces the Sonic Desktop Environment, its applications, "
              "and the many software libraries that support them.<br /><br />"
-             "KDE is a cooperative enterprise: no single entity controls its direction or products. "
+             "SonicDE is a cooperative enterprise: no single entity controls its direction or products. "
              "Instead, we work together to achieve the common goal of building the world's finest "
-             "Free Software. Everyone is welcome to <a href=\"%2\">join and contribute</a> to KDE, including you.<br /><br />"
+             "Free Software. Everyone is welcome to <a href=\"%2\">join and contribute</a> to SonicDE, including you.<br /><br />"
              "Visit <a href=\"%3\">%3</a> for "
-             "more information about the KDE community and the software we produce.</html>",
-             QStringLiteral("https://www.gnu.org/philosophy/free-sw.html"),
-             QStringLiteral("https://community.kde.org/Get_Involved"),
-             QStringLiteral("https://www.kde.org/")));
+             "more information about the SonicDE community and the software we produce.</html>",
+            QStringLiteral("https://www.gnu.org/philosophy/free-sw.html"),
+            QStringLiteral("https://github.com/Sonic-DE"),
+            QStringLiteral("https://sonicde.org")));
 
     QLabel *report = new QLabel;
     report->setMargin(10);
@@ -64,16 +64,15 @@ KAboutKdeDialog::KAboutKdeDialog(QWidget *parent)
     report->setTextInteractionFlags(Qt::TextBrowserInteraction);
     report->setText(
         i18n("<html>"
-             "Software can always be improved, and the KDE team is ready to "
+             "Software can always be improved, and the SonicDE team is ready to "
              "do so. However, you - the user - must tell us when "
              "something does not work as expected or could be done better.<br /><br />"
-             "KDE has a bug tracking system. Visit "
-             "<a href=\"%1\">%1</a> or "
-             "use the \"Report Bug...\" dialog from the \"Help\" menu to report bugs.<br /><br />"
-             "If you have a suggestion for improvement then you are welcome to use "
-             "the bug tracking system to register your wish. Make sure you use the "
-             "severity called \"Wishlist\".</html>",
-             QStringLiteral("https://bugs.kde.org/")));
+             "SonicDE tracks bugs in the issue tracker of each project. Visit "
+             "<a href=\"%1\">%1</a> and open an issue on the project concerned "
+             "to report bugs.<br /><br />"
+             "If you have a suggestion for improvement then you are welcome to "
+             "open an issue for your wish as well.</html>",
+            QStringLiteral("https://github.com/Sonic-DE")));
 
     QLabel *join = new QLabel;
     join->setMargin(10);
@@ -84,19 +83,19 @@ KAboutKdeDialog::KAboutKdeDialog(QWidget *parent)
     join->setText(
         i18n("<html>"
              "You do not have to be a software developer to be a member of the "
-             "KDE team. You can join the language teams that translate "
+             "SonicDE team. You can help translate "
              "program interfaces. You can provide graphics, themes, sounds, and "
              "improved documentation. You decide!"
              "<br /><br />"
              "Visit "
              "<a href=\"%1\">%1</a> "
-             "for information on some projects in which you can participate."
+             "for the projects in which you can participate."
              "<br /><br />"
              "If you need more information or documentation, then a visit to "
              "<a href=\"%2\">%2</a> "
              "will provide you with what you need.</html>",
-             QStringLiteral("https://community.kde.org/Get_Involved"),
-             QStringLiteral("https://develop.kde.org/")));
+            QStringLiteral("https://github.com/Sonic-DE"),
+            QStringLiteral("https://sonicde.org")));
 
     QLabel *support = new QLabel;
     support->setMargin(10);
@@ -106,32 +105,23 @@ KAboutKdeDialog::KAboutKdeDialog(QWidget *parent)
     support->setTextInteractionFlags(Qt::TextBrowserInteraction);
     support->setText(
         i18n("<html>"
-             "KDE software is and will always be available free of charge, however creating it is not free.<br /><br />"
-             "To support development the KDE community has formed the KDE e.V., a non-profit organization "
-             "legally founded in Germany. KDE e.V. represents the KDE community in legal and financial matters. "
-             "See <a href=\"%1\">%1</a>"
-             " for information on KDE e.V.<br /><br />"
-             "KDE benefits from many kinds of contributions, including financial. "
-             "We use the funds to reimburse members and others for expenses "
-             "they incur when contributing. Further funds are used for legal "
-             "support and organizing conferences and meetings. <br /> <br />"
-             "We would like to encourage you to support our efforts with a "
-             "financial donation, using one of the ways described at "
-             "<a href=\"%2\">%2</a>."
+             "SonicDE software is and will always be available free of charge, however creating it is not free.<br /><br />"
+             "No way to donate to SonicDE has been set up yet, but we will be creating one. "
+             "Until then, you can support SonicDE by contributing; see "
+             "<a href=\"%1\">%1</a>."
              "<br /><br />Thank you very much in advance for your support.</html>",
-             QStringLiteral("https://ev.kde.org/"),
-             QStringLiteral("https://www.kde.org/community/donations/")));
+            QStringLiteral("https://sonicde.org")));
     support->setMinimumSize(support->sizeHint());
 
     QTabWidget *tabWidget = new QTabWidget;
     tabWidget->setUsesScrollButtons(false);
-    tabWidget->addTab(about, i18nc("@title:tab About KDE", "&About"));
+    tabWidget->addTab(about, i18nc("@title:tab About SonicDE", "&About"));
     tabWidget->addTab(report, i18nc("@title:tab", "&Report Bugs or Wishes"));
-    tabWidget->addTab(join, i18nc("@title:tab", "&Join KDE"));
-    tabWidget->addTab(support, i18nc("@title:tab", "&Support KDE"));
+    tabWidget->addTab(join, i18nc("@title:tab", "&Join SonicDE"));
+    tabWidget->addTab(support, i18nc("@title:tab", "&Support SonicDE"));
 
     QLabel *image = new QLabel;
-    QIcon icon(QStringLiteral(":/kxmlgui5/aboutkde.svg"));
+    QIcon icon(QStringLiteral(":/kxmlgui5/aboutsonicde.svg"));
     image->setPixmap(icon.pixmap(150, 250));
 
     QVBoxLayout *sideLayout = new QVBoxLayout;
