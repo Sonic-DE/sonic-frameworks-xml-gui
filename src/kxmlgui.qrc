@@ -3,6 +3,7 @@
     <qresource prefix="/kxmlgui5">
         <file>ui_standards.rc</file>
         <file>aboutsonicde.svg</file>
+        <file>sonicde.svg</file>
         <file>thumb_frame.png</file>
     </qresource>
 </RCC>
