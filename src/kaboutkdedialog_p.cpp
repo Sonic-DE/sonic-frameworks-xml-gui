@@ -33,7 +33,8 @@ KAboutKdeDialog::KAboutKdeDialog(QWidget *parent)
     KTitleWidget *titleWidget = new KTitleWidget(this);
     titleWidget->setText(i18n("<html><font size=\"5\">SonicDE</font><br />Be Free!</html>"));
     titleWidget->setIconSize(QSize(48, 48));
-    titleWidget->setIcon(QIcon::fromTheme(QStringLiteral("kde")), KTitleWidget::ImageLeft);
+    // Bundled, so icon themes without a SonicDE icon don't show another logo.
+    titleWidget->setIcon(QIcon(QStringLiteral(":/kxmlgui5/sonicde.svg")), KTitleWidget::ImageLeft);
 
     QLabel *about = new QLabel;
     about->setMargin(10);
