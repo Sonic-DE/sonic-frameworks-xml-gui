@@ -211,6 +211,11 @@ public:
      */
     void rebuildKXMLGUIClients();
 
+    /*!
+     * Delete the local XML files, rebuild the GUI and load the toolbars again
+     */
+    void restoreDefaults();
+
 Q_SIGNALS:
     /*!
      * Emitted whenever any modifications are made by the user.

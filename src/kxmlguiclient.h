@@ -27,6 +27,7 @@ namespace KDEPrivate
 {
 class KEditToolBarWidget;
 }
+class KToolBarEditor;
 
 /*!
  * \class KXMLGUIClient
@@ -39,6 +40,7 @@ class KEditToolBarWidget;
 class KXMLGUI_EXPORT KXMLGUIClient
 {
     friend class KDEPrivate::KEditToolBarWidget; // for setXMLFile(3 args)
+    friend class KToolBarEditor; // for loadStandardsXmlFile() and setXMLFile() on rebuilding
 public:
     /*!
      * \brief Constructs a KXMLGUIClient that can be used with a

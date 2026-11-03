@@ -21,4 +21,9 @@ ecm_add_tests(
    LINK_LIBRARIES Qt6::Test KF6::IconThemes KF6::XmlGui
 )
 
+ecm_add_test(ktoolbareditortest.cpp
+   GUI
+   LINK_LIBRARIES Qt6::Test KF6::XmlGui KF6::I18n
+)
+
 set_tests_properties(ktoolbar_unittest PROPERTIES RUN_SERIAL TRUE) # it wipes out ~/.qttest/share

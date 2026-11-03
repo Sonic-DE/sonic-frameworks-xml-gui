@@ -42,6 +42,7 @@ target_sources(KF6XmlGui PRIVATE
   kswitchlanguagedialog_p.cpp
   ktoggletoolbaraction.cpp
   ktoolbar.cpp
+  ktoolbareditor.cpp
   ktoolbarhandler.cpp
   ktoolbarhelper.cpp
   ktooltiphelper.cpp
@@ -130,6 +131,7 @@ ecm_generate_headers(KXmlGui_CamelCase_HEADERS
   KShortcutWidget
   KToggleToolBarAction
   KToolBar
+  KToolBarEditor
   KToolTipHelper
   KXMLGUIBuilder
   KXMLGUIClient
