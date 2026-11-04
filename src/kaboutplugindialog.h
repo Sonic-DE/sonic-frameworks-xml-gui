@@ -18,7 +18,7 @@ class KAboutPluginDialogPrivate;
 
 /*!
  * \class KAboutPluginDialog
- * \inmodule KXMLGui
+ * \inmodule KXmlGui
  *
  * \brief This class provides a standard "About Plugin" dialog box.
  *
